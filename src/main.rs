@@ -48,12 +48,16 @@ fn main() {
 	let mut color_mode: i32 = 5 ;
 	let mut fractal_mode: i32 = 6 ;
 
-	println!("+----------------------------------------------+");
-	println!("| everything is controlled by scrolling !      |");
-	println!("| holt ctrl to zoom                            |");
-	println!("| hold alt to transform the figure             |");
-	println!("| hold shift to change the divergance criteria |");
-	println!("+----------------------------------------------+");
+	println!("+-----------------------------------------------+");
+	println!("| everything is controlled by scrolling !       |");
+	println!("| scroll = move                                 |");
+	println!("| ctrl+scroll = zoom                            |");
+	println!("| alt+scroll = transform the figure             |");
+	println!("| shift+scroll = change the divergance criteria |");
+	println!("| F10 = quit                                    |");
+	println!("| 0-9 and q,w,e,r = change coloring             |");
+	println!("| p,o,l,i,k,u,j,m = change fractal              |");
+	println!("+-----------------------------------------------+");
  	loop {
 		zoom = f32::exp(-0.1*ctrlscrolly);
 		// absolute time
