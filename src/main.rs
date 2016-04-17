@@ -45,7 +45,7 @@ fn main() {
 	let mut pressure : f32 = 0. ;
 	let mut zoom : f32 ;
 
-	let mut color_mode: i32 = 8 ;
+	let mut color_mode: i32 = 5 ;
 	let mut fractal_mode: i32 = 6 ;
 
 	println!("+----------------------------------------------+");

@@ -336,8 +336,8 @@ void fractal () {
 			b=norm;
 		break;
 		case 10:
-			r=col1*norm;
-			g=col2*norm;
+			r=cos(t+2*cos(0*t)*col1+2*norm)*col1*norm - sin(t+1.5*cos(0*t)*col1+2*norm)*col2*norm;
+			g=cos(t+2*cos(0*t)*col2+2*norm)*col2*norm + sin(t+1.5*cos(0*t)*col2+2*norm)*col1*norm;
 			b=norm;
 		break;
 		case 11:
@@ -346,15 +346,15 @@ void fractal () {
 			b=norm;
 		break;
 		case 12:
-			r=((n+int(time1*10))%10)/9.;
-			g=((n+int(time1*10))%10)/9.;
+			r=((n+int(t*10))%10)/9.;
+			g=((n+int(t*10))%10)/9.;
 			b=norm;
 		break;
 		case 13:
 			// r=.5+.5*cos(2*pi*  ((n+int(time2*10))%10) /9.);
 			// g=.5+.5*cos(2*pi*  ((n+int(time2*10))%10) /9.);
-			r=.5+.5*cos(2*pi*(n+time1*5)/9.);
-			g=.5+.5*cos(2*pi*(n+time1*5)/9.);
+			r=.5+.5*cos(2*pi*(n+t*5)/9.);
+			g=.5+.5*cos(2*pi*(n+t*5)/9.);
 			b=norm;
 		break;
 	}
