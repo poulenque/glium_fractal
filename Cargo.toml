@@ -1,0 +1,8 @@
+[package]
+name = "glium_testing"
+version = "0.1.0"
+authors = ["doek"]
+
+[dependencies]
+glium = "*"
+time = "*"
