@@ -3,6 +3,10 @@ messing up with glium.
 
 This is a port of an old project to rust. It made me happy.
 
+2d realtime fractal viewer !
+
+You can play with frag.frag if you want to render something else...
+
 to compile and run :
 ```
 cargo run
